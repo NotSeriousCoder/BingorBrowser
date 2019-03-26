@@ -32,7 +32,7 @@ public class BrowserActivity extends BaseActivity {
 
     @Override
     public void initView() {
-        wvMain = findViewById(R.id.wv_m_act_browser_p_main);
+        wvMain = (WebView) findViewById(R.id.wv_m_act_browser_p_main);
         webViewUtil = new WebViewUtil(wvMain);
         webViewUtil.initWebView();
     }
