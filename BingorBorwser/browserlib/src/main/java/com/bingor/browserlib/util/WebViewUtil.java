@@ -11,7 +11,6 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 
-import com.bingor.utillib.log.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -233,7 +232,6 @@ public class WebViewUtil {
 
         // End
         script.append("})()");
-        Log.e("leehong2", "script.toString() = " + script.toString());
         return script.toString();
     }
 
@@ -343,7 +341,6 @@ public class WebViewUtil {
      * @return
      */
     public static boolean handleJsInterface(WebView view, String url, String message, String defaultValue, JsPromptResult result) {
-        Log.e("leehong2", "Js prompt message = " + message);
         String prefix = MSG_PROMPT_HEADER;
         if (!message.startsWith(prefix)) {
             return false;

@@ -1,10 +1,7 @@
 package com.bingor.browserlib.view.activity;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 import com.bingor.browserlib.BrowserConstant;
